@@ -1,18 +1,3 @@
-<?php 
-/* clion_cookie -------------------------------------------------- */
-if(!isset($_COOKIE['clion_cookie'])) $gdpr="1-1-0"; 
-else $gdpr=@$_COOKIE['clion_cookie'];
-
-$sep="-";
-$str=explode($sep,$gdpr);
-
-$preferenze_clion=$str[0];
-$statistiche_clion=$str[1];
-$marketing_clion=$str[2];
-
-/* //clion_cookie -------------------------------------------------- */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -29,7 +14,7 @@ $marketing_clion=$str[2];
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
 		<!-- Rocket extras -->
 		<link href="assets/css/animate.css" rel="stylesheet">
@@ -87,7 +72,7 @@ $marketing_clion=$str[2];
 	<!-- Start Header
 	================================================== -->
 	<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
-	  <div class="container">
+	  <div class="container container-flex">
 	    <div class="navbar-header">
 	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 	        <span class="sr-only">Toggle navigation</span>
@@ -125,23 +110,14 @@ $marketing_clion=$str[2];
 					  <a href="trattamento-pavimenti.php">Trattamento pavimenti</a>
 				  </li>
 				  <li>
-					  <a onclick="javascript:location.href='#sanity_system'">Sanificazione con Ozono</a>
-				  </li>
-                  <li>
-				  <a href="https://draacol.com/">Shop</a>
-			  </li>
-                  <li>
-              		<a href="te:+393207531008"><i class="glyphicon glyphicon-earphone"></i> 320 753 1008</a>
-                  </li>
-                  <!--<li class="offerte">
-                    <a href="assets/images/popup.jpg" rel="prettyPhoto">Offerte</a>
-                  </li>-->
-			  </ul>
-			  <ul class="nav navbar-nav navbar-right header-button">
-				  <li>
-					  <button type="button" class="request_estimation btn btn-primary">Richiedi preventivo gratuito</button>
+					  <a onclick="javascript:location.href='#sanity_system'">Sanificazione</a>
 				  </li>
 			  </ul>
+				<ul class="nav navbar-nav navbar-right header-button">
+					<li>
+					<a href="tel:+393207531008" class="request_estimation btn btn-primary"><i class="glyphicon glyphicon-earphone"></i> Chiama ora!</a>
+					</li>
+				</ul>
 		  </nav>
 	  </div>
 	</header>
@@ -518,14 +494,13 @@ $marketing_clion=$str[2];
                         
                         	<!-- privacy -->
                             <p style="font-size: 12px; line-height:12px; color: #333;">
-                                <input type="checkbox" required class="required" /> Letta e compresa l'informativa privacy presente in questo <a href="https://privacy.clion.agency/privacy.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">LINK</a>, ai sensi dell’art. 6 del Regolamento Europeo in materia di Protezione dei Dati n. 679/2016, dichiaro di essere maggiore di 16 anni e presto il consenso all’utilizzo dei miei dati.
+                                <input type="checkbox" required class="required" /> Letta e compresa l'informativa privacy presente in questo <a href="privacy.php" target="_blank">LINK</a>, ai sensi dell’art. 6 del Regolamento Europeo in materia di Protezione dei Dati n. 679/2016, dichiaro di essere maggiore di 16 anni e presto il consenso all’utilizzo dei miei dati.
                             </p>
                             <p style="font-size: 12px; line-height:12px; color: #333;">
                                 <input name="spunta_marketing" type="checkbox" /> Presto il mio consenso all'utilizzo dei miei dati personali forniti in questo modulo a questo sito internet per finalit&agrave; promozionali, comunicazioni aventi contenuto promozionale, informativo, inviti, sconti dedicati, annunci sulle ultime novit&agrave; di prodotti e servizi.
                             </p>  
                         <!-- / privacy -->
 						
-						<?php if(($preferenze_clion!=0)&&($preferenze_clion!="0")){ ?><div class="g-recaptcha" data-sitekey="6LfJf78UAAAAAG5pwOCWqs_6eLbjfKjKukBdBMiX" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div><?php } ?>
                         </div>
 						<p align="right">
 							<button id="contact_form_send_message" class="btn btn-default">INVIA</button>
@@ -558,9 +533,9 @@ $marketing_clion=$str[2];
 						<a href="tel:+393207531008">(+39) 345 156 8425</a>
 					</span>
 					<span style="display:block;text-align:center">
-						E-mail. <a href="mailto:info@serviceman.it">info@serviceman.it</a><br>
-                        <a href="https://privacy.clion.agency/privacy.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">Privacy Policy</a> - 
-						<a href="https://privacy.clion.agency/cookie_gdpr.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">Cookie Policy</a>
+						E-mail. <a href="mailto:servicemanav@gmail.com">servicemanav@gmail.com</a><br>
+                        <a href="privacy.php" target="_blank">Privacy Policy</a> - 
+						<a href="cookie.php" target="_blank">Cookie Policy</a>
 					</span>
 				</div>
 				<div class="col-md-4 sol-sm-4">
@@ -593,15 +568,6 @@ $marketing_clion=$str[2];
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/scripts.js"></script>
     
-
-    <!--Start Cookie Script-->
-    <script type="text/javascript" charset="UTF-8" src="../chs03.cookie-script.com/s/5bd076a51edb0f45dba00eaa9b244de3.js"></script>
-    <!--End Cookie Script-->
-	
-	<!-- ********************* -->
-	<!-- Start Rocket -->
-	<script src="https://privacy.clion.agency/cookie.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514"></script>
-	<?php if(($preferenze_clion!=0)&&($preferenze_clion!="0")){ ?><script src='https://www.google.com/recaptcha/api.js'></script><?php } ?>
 	</body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105577727-8"></script>

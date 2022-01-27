@@ -1,18 +1,3 @@
-<?php 
-/* clion_cookie -------------------------------------------------- */
-if(!isset($_COOKIE['clion_cookie'])) $gdpr="1-1-0"; 
-else $gdpr=@$_COOKIE['clion_cookie'];
-
-$sep="-";
-$str=explode($sep,$gdpr);
-
-$preferenze_clion=$str[0];
-$statistiche_clion=$str[1];
-$marketing_clion=$str[2];
-
-/* //clion_cookie -------------------------------------------------- */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -30,7 +15,7 @@ $marketing_clion=$str[2];
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
 		<!-- Rocket extras -->
 		<link href="assets/css/animate.css" rel="stylesheet">
@@ -54,6 +39,7 @@ $marketing_clion=$str[2];
 		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
 
+		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14a6ca6c-5eef-4df1-9559-292cd542f7e3" data-blockingmode="auto" type="text/javascript"></script>
         <script src="assets/js/analytics.js"></script>
 
         <!-- Global site tag (gtag.js) - Google AdWords: 863549369 -->
@@ -113,7 +99,7 @@ $marketing_clion=$str[2];
 	<!-- Start Header
 	================================================== -->
 	<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
-	  <div class="container">
+	  <div class="container container-flex">
 	    <div class="navbar-header">
 	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 	        <span class="sr-only">Toggle navigation</span>
@@ -150,28 +136,19 @@ $marketing_clion=$str[2];
 <a class="dropdown-item" href="trattamento-pavimenti-ad-avellino.php">Trattamento Pavimenti</a>
                       </div>
 				  </li>
+			  <li>
+				  <a onclick="javascript:location.href='#sanity_system'">Sanificazione</a>
+			  </li>
 	        <li>
 	          <a href="lavaggio-tessuti.php">Trattamento tessuti</a>
 	        </li>
 			  <li>
 				  <a href="trattamento-pavimenti.php">Trattamento pavimenti</a>
 			  </li>
-			  <li>
-				  <a onclick="javascript:location.href='#sanity_system'">Sanificazione ambientale</a>
-			  </li>
-               <li>
-				  <a href="https://draacol.com/">Shop</a>
-			  </li>
-              <li>
-              		<a href="te:+393207531008"><i class="glyphicon glyphicon-earphone"></i> 320 753 1008</a>
-              </li>
-              <!--<li class="offerte">
-              	<a href="assets/images/popup.jpg" rel="prettyPhoto">Offerte</a>
-              </li>-->
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right header-button">
 	        <li>
-	          <button type="button" class="request_estimation btn btn-primary">Richiedi preventivo gratuito</button>
+	          <a href="tel:+393207531008" class="request_estimation btn btn-primary"><i class="glyphicon glyphicon-earphone"></i> Chiama ora!</a>
 	        </li>
 	      </ul>
 	    </nav>
@@ -180,23 +157,25 @@ $marketing_clion=$str[2];
 	<!-- ==================================================
 	End Header -->
 	<div class="sliderHome">
-        <div><img src="assets/images/sliderHome/01.jpg" alt="Lavaggio divani Salerno"></div>
-		<div><img src="assets/images/sliderHome/02.jpg" alt="Lavaggio divani Napoli"></div>
-        <div><img src="assets/images/sliderHome/03.jpg" alt="Pulizie abitazioni Avellino"></div>
-        <div><img src="assets/images/sliderHome/04.jpg" alt="Pulizie abitazioni Benevento"></div>
-        <div><img src="assets/images/sliderHome/05.jpg" alt="Pulizie abitazioni Caserta"></div>
+        <div><img src="assets/images/sliderHome/01.jpeg" alt="Sanificazione COVID-19"></div>
+		<div><img src="assets/images/sliderHome/06.jpeg" alt="Sanificazione COVID-19"></div>
+		<div><img src="assets/images/sliderHome/02.jpeg" alt="Sanificazione COVID-19"></div>
+        <div><img src="assets/images/sliderHome/05.jpeg" alt="Sanificazione COVID-19"></div>
+        <div><img src="assets/images/sliderHome/03.jpeg" alt="Sanificazione COVID-19"></div>
+        <div><img src="assets/images/sliderHome/07.jpeg" alt="Sanificazione COVID-19"></div>
+        <div><img src="assets/images/sliderHome/04.jpeg" alt="Sanificazione COVID-19"></div>
     </div>	
     <div class="box-header animate" data-animate="fadeIn">
 			<h3 style="margin:0;padding:0;text-align:center">
 				Benvenuto in Service Man,<br />azienda specializzata in pulizie civili ed industriali,<br />
-				igienizzazione tessuti
+				sanificazioni e igienizzazioni
 			</h3>
 			<p style="margin:0;padding:0;text-align:center;margin-top:20px;">
 				Per info contattateci ai seguenti recapiti:<br />
 				Tel.: <a href="tel:+390827601691"><b>0827 601 691</b></a><br />
 				Cell.: <a href="tel:+393451568425"><b>345 156 8425</b></a> - <a href="tel:+393207531008"><b>320 753 1008</b></a><br />
 				oppure scrivere a:
-				<a href="mailto:info@serviceman.it"><b>info@serviceman.it</b></a>
+				<a href="mailto:servicemanav@gmail.com"><b>servicemanav@gmail.com</b></a>
 			</p>
 		</div>
 	<!--<div id="parallax" class="parallax_home">
@@ -424,14 +403,13 @@ $marketing_clion=$str[2];
                         
                         	<!-- privacy -->
                             <p style="font-size: 12px; line-height:12px; color: #333;">
-                                <input type="checkbox" required class="required" /> Letta e compresa l'informativa privacy presente in questo <a href="https://privacy.clion.agency/privacy.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">LINK</a>, ai sensi dell’art. 6 del Regolamento Europeo in materia di Protezione dei Dati n. 679/2016, dichiaro di essere maggiore di 16 anni e presto il consenso all’utilizzo dei miei dati.
+                                <input type="checkbox" required class="required" /> Letta e compresa l'informativa privacy presente in questo <a href="privacy.php" target="_blank">LINK</a>, ai sensi dell’art. 6 del Regolamento Europeo in materia di Protezione dei Dati n. 679/2016, dichiaro di essere maggiore di 16 anni e presto il consenso all’utilizzo dei miei dati.
                             </p>
                             <p style="font-size: 12px; line-height:12px; color: #333;">
                                 <input name="spunta_marketing" type="checkbox" /> Presto il mio consenso all'utilizzo dei miei dati personali forniti in questo modulo a questo sito internet per finalit&agrave; promozionali, comunicazioni aventi contenuto promozionale, informativo, inviti, sconti dedicati, annunci sulle ultime novit&agrave; di prodotti e servizi.
                             </p>  
                         <!-- / privacy -->
 						
-						<?php if(($preferenze_clion!=0)&&($preferenze_clion!="0")){ ?><div class="g-recaptcha" data-sitekey="6LfJf78UAAAAAG5pwOCWqs_6eLbjfKjKukBdBMiX" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div><?php } ?>
                         </div>
                         
                         <p align="right">
@@ -467,10 +445,10 @@ $marketing_clion=$str[2];
 						<a href="tel:+393207531008">(+39) 345 156 8425</a>
 					</span>
 					<span style="display:block;text-align:center">
-						E-mail. <a href="mailto:info@serviceman.it">info@serviceman.it</a>
+						E-mail. <a href="mailto:servicemanav@gmail.com">servicemanav@gmail.com</a>
                         <br>
-                        <a href="https://privacy.clion.agency/privacy.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">Privacy Policy</a> - 
-						<a href="https://privacy.clion.agency/cookie_gdpr.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">Cookie Policy</a>
+                        <a href="privacy.php" target="_blank">Privacy Policy</a> - 
+						<a href="cookie.php" target="_blank">Cookie Policy</a>
 					</span>
 				</div>
 				<div class="col-md-4 sol-sm-4">
@@ -502,19 +480,14 @@ $marketing_clion=$str[2];
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/scripts.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script>
-    <!--Start Cookie Script-->
-    <script type="text/javascript" charset="UTF-8" src="../chs03.cookie-script.com/s/5bd076a51edb0f45dba00eaa9b244de3.js"></script>
-    <!--End Cookie Script-->
-	
+    
     <script>
 		$(document).ready(function(){ 
 			//$.prettyPhoto.open('assets/images/popup.jpg?width=800 &amp;height=600');
 		});
 	</script>
     
-    
-	<?php if(($preferenze_clion!=0)&&($preferenze_clion!="0")){ ?><script src='https://www.google.com/recaptcha/api.js'></script><?php } ?>
-		<script src="https://privacy.clion.agency/cookie.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514"></script>
+   
 	<!-- ********************* -->
 	<!-- Start Rocket -->
 
@@ -538,10 +511,10 @@ $marketing_clion=$str[2];
 <!---------------/SCRIPT COLORBOX--------------->   
 <div style="display:none;"> 
     <div id="popup-offerte" style="position: relative;">
-    	<a href="https://www.serviceman.it/lavaggio-tessuti.php" style="position: absolute; z-index: 1; right: 0;display: block;top: 40%;">
+    	<a href="https://www.servicemanav.it/lavaggio-tessuti.php" style="position: absolute; z-index: 1; right: 0;display: block;top: 40%;">
         	<img src="assets/images/pulizia-1.png" alt="Sanificazione ambientale Avellino">
         </a>
-        <a href="https://www.serviceman.it/trattamento-pavimenti.php" style="position: absolute; z-index: 2; right: 0;display: block;top: 60%;">
+        <a href="https://www.servicemanav.it/trattamento-pavimenti.php" style="position: absolute; z-index: 2; right: 0;display: block;top: 60%;">
         	<img src="assets/images/pulizia-2.png" alt="Sanificazione ambientale Benevento">
         </a>
        <img class="inline" style="position: relative; z-index: 0;" src="assets/images/consigli_pulizia.jpg" alt="Sanificazione ambientale Caserta">

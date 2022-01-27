@@ -1,19 +1,3 @@
-<?php 
-/* clion_cookie -------------------------------------------------- */
-if(!isset($_COOKIE['clion_cookie'])) $gdpr="1-1-0"; 
-else $gdpr=@$_COOKIE['clion_cookie'];
-
-$sep="-";
-$str=explode($sep,$gdpr);
-
-$preferenze_clion=$str[0];
-$statistiche_clion=$str[1];
-$marketing_clion=$str[2];
-
-/* //clion_cookie -------------------------------------------------- */
-
-?>
-
 <!DOCTYPE html>
 <html lang="it">
 	<head>
@@ -31,7 +15,7 @@ $marketing_clion=$str[2];
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		
 		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		
 		<!-- Rocket extras -->
 		<link href="assets/css/animate.css" rel="stylesheet">
@@ -82,14 +66,14 @@ $marketing_clion=$str[2];
 	<!-- Parallax Background
 	================================================== -->
 	<!-- image is set in the CSS as a background image -->
-	<div id="parallax" class="parallax_tessuti_landing" style="max-height: 200px"></div>
+	
 	<!-- End Parallax Background
 	================================================== -->
 	
 	<!-- Start Header
 	================================================== -->
 	<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
-	  <div class="container">
+	  <div class="container container-flex">
 	    <div class="navbar-header">
 	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 	        <span class="sr-only">Toggle navigation</span>
@@ -115,10 +99,13 @@ $marketing_clion=$str[2];
 <li class="nav-item dropdown">
 					  <a href="">SERVIZI</a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="sanificazione-con-ozono-ad-avellino.php">Sanificazione con Ozono</a>
+                        <a class="dropdown-item" href="sanificazione-con-ozono-ad-avellino.php">Sanificazione</a>
                         <a class="dropdown-item" href="pulizia-tappeti-ad-avellino.php">Pulizia Tappeti</a>
 <a class="dropdown-item" href="trattamento-pavimenti-ad-avellino.php">Trattamento Pavimenti</a>
                       </div>
+				  </li>
+				  <li>
+					  <a onclick="javascript:location.href='#sanity_system'">Sanificazione</a>
 				  </li>
 				  <li>
 					  <a href="lavaggio-tessuti.php">Trattamento tessuti</a>
@@ -126,24 +113,12 @@ $marketing_clion=$str[2];
 				  <li>
 					  <a href="trattamento-pavimenti.php">Trattamento pavimenti</a>
 				  </li>
-				  <li>
-					  <a onclick="javascript:location.href='#sanity_system'">Sanificazione con Ozono</a>
-				  </li>
-                  <li>
-				  <a href="https://draacol.com/">Shop</a>
-			  </li>
-                  <li>
-              		<a href="te:+393207531008"><i class="glyphicon glyphicon-earphone"></i> 320 753 1008</a>
-                  </li>
-                  <!--<li class="offerte">
-                    <a href="assets/images/popup.jpg" rel="prettyPhoto">Offerte</a>
-                  </li>-->
 			  </ul>
-			  <ul class="nav navbar-nav navbar-right header-button">
-				  <li>
-					  <button type="button" class="request_estimation btn btn-primary">Richiedi preventivo gratuito</button>
-				  </li>
-			  </ul>
+			<ul class="nav navbar-nav navbar-right header-button">
+				<li>
+				<a href="tel:+393207531008" class="request_estimation btn btn-primary"><i class="glyphicon glyphicon-earphone"></i> Chiama ora!</a>
+				</li>
+			</ul>
 		  </nav>
 	  </div>
 	</header>
@@ -153,7 +128,7 @@ $marketing_clion=$str[2];
 	<!-- Start Features
 	================================================== -->
 <div style="text-align: center;">
-<img src="http://serviceman.it/assets/images/sanificazione-con-ozono-ad%20avellino-service-man.jpg"></div>
+<img src="assets/images/sanificazione-con-ozono-ad%20avellino-service-man.jpg"></div>
 
 &nbsp;<br><br><br><br>
 	<h1 style="text-align: center;">SANIFICAZIONE CON OZONO</h1>
@@ -172,7 +147,7 @@ $marketing_clion=$str[2];
 &nbsp;<br><br><br>
 
 <div style="text-align: center;">
-<img src="http://serviceman.it/assets/images/sanificazione-con-ozono-ad%20avellino-service-man-foto.jpg"></div>
+<img src="assets/images/sanificazione-con-ozono-ad%20avellino-service-man-foto.jpg"></div>
 
 &nbsp;<br><br><br>
 
@@ -209,9 +184,9 @@ $marketing_clion=$str[2];
 						<a href="tel:+393207531008">(+39) 345 156 8425</a>
 					</span>
 					<span style="display:block;text-align:center">
-						E-mail. <a href="mailto:info@serviceman.it">info@serviceman.it</a><br>
-                        <a href="https://privacy.clion.agency/privacy.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">Privacy Policy</a> - 
-						<a href="https://privacy.clion.agency/cookie_gdpr.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514" target="_blank">Cookie Policy</a>
+						E-mail. <a href="mailto:servicemanav@gmail.com">servicemanav@gmail.com</a><br>
+                        <a href="privacy.php" target="_blank">Privacy Policy</a> - 
+						<a href="cookie.php" target="_blank">Cookie Policy</a>
 					</span>
 				</div>
 				<div class="col-md-4 sol-sm-4">
@@ -244,15 +219,6 @@ $marketing_clion=$str[2];
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/scripts.js"></script>
     
-
-    <!--Start Cookie Script-->
-    <script type="text/javascript" charset="UTF-8" src="../chs03.cookie-script.com/s/5bd076a51edb0f45dba00eaa9b244de3.js"></script>
-    <!--End Cookie Script-->
-	
-	<!-- ********************* -->
-	<!-- Start Rocket -->
-	<script src="https://privacy.clion.agency/cookie.php?id=b9f6df0c3b6faf637c8d99250252eea2&dom=2514"></script>
-	<?php if(($preferenze_clion!=0)&&($preferenze_clion!="0")){ ?><script src='https://www.google.com/recaptcha/api.js'></script><?php } ?>
 	</body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105577727-8"></script>

@@ -707,6 +707,24 @@ label {
 	position: relative;
 	z-index: 20;
 }
+
+.navbar-nav>li>a {
+	padding: 5px;
+}
+
+.header-button a {
+	color: #fff !important;
+	font-weight: 700;
+}
+
+@media (min-width: 768px){
+	.container-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
 @media (max-width: 768px){
 	.offerte:after{
 		background: none;
