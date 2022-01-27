@@ -19,8 +19,10 @@
 		<link href="assets/css/animate.css" rel="stylesheet">
 
         <link href="assets/css/style.css" rel="stylesheet">
+
+		<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14a6ca6c-5eef-4df1-9559-292cd542f7e3" data-blockingmode="auto" type="text/javascript"></script>
     </head>
     <body>
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="14a6ca6c-5eef-4df1-9559-292cd542f7e3" data-blockingmode="auto" type="text/javascript"></script>
+        
     </body>
 </html>
